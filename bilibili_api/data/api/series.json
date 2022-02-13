@@ -1,0 +1,18 @@
+{
+  "series": {
+    "archives": {
+      "url": "https://api.bilibili.com/x/series/archives?mid=269415357&series_id=61397&only_normal=true&sort=desc&pn=1&ps=3000",
+      "method": "GET",
+      "verify": false,
+      "params": {
+        "mid": "int: uid",
+        "series_id": "int: series_id",
+        "only_normal": "str bool",
+        "sort": "str: desc 倒序, asc 正序",
+        "ps": "const int: 30",
+        "pn": "int: 页码"
+      },
+      "comment": "获取series archives"
+    }
+  }
+}

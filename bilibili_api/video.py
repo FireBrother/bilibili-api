@@ -422,7 +422,10 @@ class Video:
                 elif t == 8:
                     data['mtime'] = reader_.string()
                 elif t == 9:
-                    data['extra'] = json.loads(reader_.string())
+                    try:
+                        data['extra'] = json.loads(reader_.string())
+                    except:
+                        data['extra'] = {}
                 elif t == 10:
                     data['id_str'] = reader_.string()
                 else:

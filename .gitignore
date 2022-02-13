@@ -4,3 +4,4 @@
 **/__pycache__
 /bilibili_api.egg-info
 /.vscode
+.history
